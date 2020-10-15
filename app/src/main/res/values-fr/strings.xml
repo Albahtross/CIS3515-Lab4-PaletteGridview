@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Color Changing App</string>
-    <string name = "instructions">Click any of the colors to open the canvas activity with the corresponding color.</string>
+    <string name="app_name">Application de changement de couleur</string>
+    <string name = "instructions">Cliquez sur l\'une des couleurs pour ouvrir l\'activité de canevas avec la couleur correspondante.</string>
 
     <string-array name="palette">
         <item>Blue</item>
