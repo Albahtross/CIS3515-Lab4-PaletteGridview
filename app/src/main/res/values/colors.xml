@@ -4,7 +4,7 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
 
-    <string-array name="palette">
+    <string-array name="color_palette">
         <item>Blue</item>
         <item>Black</item>
         <item>Cyan</item>

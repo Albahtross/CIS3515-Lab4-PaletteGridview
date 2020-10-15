@@ -2,7 +2,7 @@
     <string name="app_name">Color Changing App</string>
     <string name = "instructions">Click any of the colors to open the canvas activity with the corresponding color.</string>
 
-    <string-array name="palette">
+    <string-array name="palette_str">
         <item>Blue</item>
         <item>Black</item>
         <item>Cyan</item>

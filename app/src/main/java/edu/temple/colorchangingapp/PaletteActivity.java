@@ -19,13 +19,14 @@ public class PaletteActivity extends AppCompatActivity {
 
         GridView grid = (GridView)findViewById(R.id.colorGrid);
 
-        final String[] colorArray = {"Blue","Black","Cyan","Gray", "Green","Magenta","Red","White", "Yellow"};
+        //final String[] colorArray = {"Blue","Black","Cyan","Gray", "Green","Magenta","Red","White", "Yellow"};
 
         Resources res = this.getResources();
-        String[] gridLabels = res.getStringArray(R.array.palette);
+        final String[] color_text = res.getStringArray(R.array.palette_str);
+        String[] colors = res.getStringArray(R.array.color_palette);
 
 
-        GridViewAdapter adapter = new GridViewAdapter(this, colorArray);
+        GridViewAdapter adapter = new GridViewAdapter(this, colors, color_text);
 
         grid.setAdapter(adapter);
 
@@ -33,7 +34,7 @@ public class PaletteActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(PaletteActivity.this, CanvasActivity.class);
-                intent.putExtra("color_string", (String) colorArray[i]);
+                intent.putExtra("color_string", (String) color_text[i]);
                 startActivity(intent);
             }
         });

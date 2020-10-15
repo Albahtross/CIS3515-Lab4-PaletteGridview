@@ -10,11 +10,13 @@ import android.widget.TextView;
 public class GridViewAdapter extends BaseAdapter {
 
     String [] colors;
+    String [] color_text;
     Context context;
 
-    public GridViewAdapter(Context context, String [] colors) {
+    public GridViewAdapter(Context context, String [] colors, String [] color_text) {
         this.context = context;
         this.colors = colors;
+        this.color_text = color_text;
     }
 
     @Override public int getCount(){
@@ -35,7 +37,7 @@ public class GridViewAdapter extends BaseAdapter {
     public View getView(int position, View view, ViewGroup viewGroup){
         TextView textView = new TextView(context);
 
-        textView.setText(colors[position]);
+        textView.setText(color_text[position]);
         textView.setBackgroundColor(Color.parseColor(colors[position]));
 
         return textView;
