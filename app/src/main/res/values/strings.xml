@@ -4,15 +4,12 @@
     <string-array name="palette">
         <item>Blue</item>
         <item>Black</item>
-        <item>Brown</item>
-        <item>Purple</item>
+        <item>Cyan</item>
+        <item>Gray</item>
+        <item>Green</item>
+        <item>Magenta</item>
         <item>Red</item>
-        <item>Orange</item>
         <item>White</item>
         <item>Yellow</item>
-        <item>Green</item>
-        <item>Gray</item>
-        <item>Pink</item>
-        <item>Scarlet</item>
     </string-array>
 </resources>

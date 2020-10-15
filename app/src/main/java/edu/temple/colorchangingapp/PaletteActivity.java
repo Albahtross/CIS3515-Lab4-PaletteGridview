@@ -18,9 +18,6 @@ public class PaletteActivity extends AppCompatActivity {
 
         GridView grid = (GridView)findViewById(R.id.colorGrid);
 
-        //Resources res = getResources();
-
-        //final String[] colorArray = res.getStringArray(R.array.palette);
         final String[] colorArray = {"Blue","Black","Cyan","Gray", "Green","Magenta","Red","White", "Yellow"};
 
 
