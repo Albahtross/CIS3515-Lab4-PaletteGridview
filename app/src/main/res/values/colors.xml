@@ -3,4 +3,16 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <string-array name="palette">
+        <item>Blue</item>
+        <item>Black</item>
+        <item>Cyan</item>
+        <item>Gray</item>
+        <item>Green</item>
+        <item>Magenta</item>
+        <item>Red</item>
+        <item>White</item>
+        <item>Yellow</item>
+    </string-array>
 </resources>
