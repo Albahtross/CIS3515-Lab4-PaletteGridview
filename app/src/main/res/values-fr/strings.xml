@@ -7,11 +7,11 @@
         <item>Bleu</item>
         <item>Noir</item>
         <item>Cyan</item>
-        <item>Gray</item>
-        <item>Green</item>
+        <item>Gris</item>
+        <item>Vert</item>
         <item>Magenta</item>
-        <item>Red</item>
-        <item>White</item>
-        <item>Yellow</item>
+        <item>Rouge</item>
+        <item>Blanc</item>
+        <item>Jaune</item>
     </string-array>
 </resources>

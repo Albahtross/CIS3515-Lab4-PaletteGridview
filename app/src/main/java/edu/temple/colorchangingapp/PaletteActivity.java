@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.TextView;
 
 public class PaletteActivity extends AppCompatActivity {
 
@@ -23,8 +24,10 @@ public class PaletteActivity extends AppCompatActivity {
 
         Resources res = this.getResources();
         final String[] color_text = res.getStringArray(R.array.palette_str);
-        String[] colors = res.getStringArray(R.array.color_palette);
+        final String[] colors = res.getStringArray(R.array.color_palette);
 
+        TextView instructions = findViewById(R.id.instructions);
+        instructions.setText(R.string.instructions);
 
         GridViewAdapter adapter = new GridViewAdapter(this, colors, color_text);
 
@@ -35,6 +38,7 @@ public class PaletteActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(PaletteActivity.this, CanvasActivity.class);
                 intent.putExtra("color_string", (String) color_text[i]);
+                intent.putExtra("color", (String) colors[i]);
                 startActivity(intent);
             }
         });
