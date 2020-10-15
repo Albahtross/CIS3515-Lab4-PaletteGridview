@@ -3,6 +3,7 @@ package edu.temple.colorchangingapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -19,6 +20,9 @@ public class PaletteActivity extends AppCompatActivity {
         GridView grid = (GridView)findViewById(R.id.colorGrid);
 
         final String[] colorArray = {"Blue","Black","Cyan","Gray", "Green","Magenta","Red","White", "Yellow"};
+
+        Resources res = this.getResources();
+        String[] gridLabels = res.getStringArray(R.array.palette);
 
 
         GridViewAdapter adapter = new GridViewAdapter(this, colorArray);
