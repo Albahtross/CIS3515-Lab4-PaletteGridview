@@ -10,7 +10,7 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.TextView;
 
-public class PaletteActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,7 @@ public class PaletteActivity extends AppCompatActivity {
         grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(PaletteActivity.this, CanvasActivity.class);
+                Intent intent = new Intent(MainActivity.this, CanvasActivity.class);
                 intent.putExtra("color_string", (String) color_text[i]);
                 intent.putExtra("color", (String) colors[i]);
                 startActivity(intent);
