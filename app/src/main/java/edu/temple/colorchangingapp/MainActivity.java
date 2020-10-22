@@ -16,32 +16,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_palette);
-
-        GridView grid = (GridView)findViewById(R.id.colorGrid);
+        setContentView(R.layout.palette_fragment);
 
         //final String[] colorArray = {"Blue","Black","Cyan","Gray", "Green","Magenta","Red","White", "Yellow"};
 
         Resources res = this.getResources();
-        final String[] color_text = res.getStringArray(R.array.palette_str);
-        final String[] colors = res.getStringArray(R.array.color_palette);
+
 
         TextView instructions = findViewById(R.id.instructions);
         instructions.setText(R.string.instructions);
 
-        GridViewAdapter adapter = new GridViewAdapter(this, colors, color_text);
 
-        grid.setAdapter(adapter);
-
-        grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(MainActivity.this, CanvasActivity.class);
-                intent.putExtra("color_string", (String) color_text[i]);
-                intent.putExtra("color", (String) colors[i]);
-                startActivity(intent);
-            }
-        });
 
     }
 }
