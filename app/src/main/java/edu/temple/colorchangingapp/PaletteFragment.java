@@ -34,7 +34,7 @@ public class PaletteFragment extends Fragment {
 
         final String[] color_text = res.getStringArray(R.array.palette_str);
         final String[] colors = res.getStringArray(R.array.color_palette);
-        GridView grid = (GridView)findViewById(R.id.colorGrid);
+        GridView grid = view.findViewById(R.id.colorGrid);
 
         GridViewAdapter adapter = new GridViewAdapter(context, colors, color_text);
 
@@ -51,6 +51,8 @@ public class PaletteFragment extends Fragment {
         });
         return view;
     }
+
+
 
 
 }

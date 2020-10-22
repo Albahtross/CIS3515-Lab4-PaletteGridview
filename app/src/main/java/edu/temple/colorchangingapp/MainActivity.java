@@ -2,6 +2,7 @@ package edu.temple.colorchangingapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -11,14 +12,20 @@ import android.widget.GridView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    PaletteFragment paletteFragment;
+    CanvasFragment canvasFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.palette_fragment);
+        setContentView(R.layout.activity_main);
 
         //final String[] colorArray = {"Blue","Black","Cyan","Gray", "Green","Magenta","Red","White", "Yellow"};
+
+        FragmentManager fragmentManager = getFragmentManager();
+
+        paletteFragment = fragmentManager.findFragmentById(R.id.palette_layout);
 
         Resources res = this.getResources();
 
