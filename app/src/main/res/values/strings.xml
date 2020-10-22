@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Color Changing App</string>
-    <string name="instructions">Click any of the colors to open the canvas activity with the corresponding color.</string>
+    <string name="instructions">Click any of the colors to change the background color of the canvas underneath.</string>
 
     <string-array name="color_str">
         <item>Blue</item>

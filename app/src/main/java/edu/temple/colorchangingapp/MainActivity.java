@@ -28,13 +28,13 @@ public class MainActivity extends AppCompatActivity implements PaletteFragment.O
 
         FragmentManager fragmentManager = getSupportFragmentManager();
 
-        paletteFragment = (PaletteFragment)fragmentManager.findFragmentById(R.id.palette_layout);
+        paletteFragment = (PaletteFragment)fragmentManager.findFragmentById(R.id.container1);
         if (paletteFragment == null){
             paletteFragment = new PaletteFragment();
             fragmentManager.beginTransaction().add(R.id.mainLayout, paletteFragment).commit();
         }
 
-        canvasFragment = (CanvasFragment)fragmentManager.findFragmentById(R.id.canvas_layout);
+        canvasFragment = (CanvasFragment)fragmentManager.findFragmentById(R.id.container2);
         if (canvasFragment == null){
             canvasFragment = new CanvasFragment();
             fragmentManager.beginTransaction().add(R.id.mainLayout, canvasFragment).commit();

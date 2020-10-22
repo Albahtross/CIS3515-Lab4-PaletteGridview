@@ -5,58 +5,52 @@
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/instructions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.058" />
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
 
     <FrameLayout
-        android:id="@+id/palette_layout"
-        android:layout_width="304dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="53dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toTopOf="@+id/canvas_layout"
+        android:id="@+id/container1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintBottom_toTopOf="@+id/instructions"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <fragment
-            android:id="@+id/pfrag"
+            android:id="@+id/palette_fragment"
             android:name="edu.temple.colorchangingapp.PaletteFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/canvas_layout"
-        android:layout_width="257dp"
-        android:layout_height="199dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
+        android:id="@+id/container2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/palette_layout">
+        app:layout_constraintTop_toBottomOf="@+id/instructions">
 
         <fragment
-            android:id="@+id/cfrag"
+            android:id="@+id/canvas_fragment"
             android:name="edu.temple.colorchangingapp.CanvasFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-
     </FrameLayout>
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="316dp"
+        android:layout_marginBottom="43dp"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toTopOf="@+id/container2"
+        app:layout_constraintEnd_toEndOf="@+id/container1"
+        app:layout_constraintTop_toBottomOf="@+id/container1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
