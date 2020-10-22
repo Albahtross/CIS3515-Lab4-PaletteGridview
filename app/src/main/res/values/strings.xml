@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Color Changing App</string>
-    <string name = "instructions">Click any of the colors to open the canvas activity with the corresponding color.</string>
+    <string name="instructions">Click any of the colors to open the canvas activity with the corresponding color.</string>
 
-    <string-array name="palette_str">
+    <string-array name="color_str">
         <item>Blue</item>
         <item>Black</item>
         <item>Cyan</item>
@@ -13,4 +13,6 @@
         <item>White</item>
         <item>Yellow</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

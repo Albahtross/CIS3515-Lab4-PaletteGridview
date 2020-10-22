@@ -3,7 +3,7 @@
     <string name="app_name">Application de changement de couleur</string>
     <string name = "instructions">Cliquez sur l\'une des couleurs pour ouvrir l\'activité de canevas avec la couleur correspondante.</string>
 
-    <string-array name="palette_str">
+    <string-array name="color_str">
         <item>Bleu</item>
         <item>Noir</item>
         <item>Cyan</item>
