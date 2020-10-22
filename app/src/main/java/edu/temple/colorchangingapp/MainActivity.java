@@ -2,6 +2,7 @@ package edu.temple.colorchangingapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
 import android.content.res.Resources;
