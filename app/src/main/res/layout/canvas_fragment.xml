@@ -10,15 +10,15 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/canvas_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="274dp">
 
         <TextView
             android:id="@+id/color_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="164dp"
             android:layout_marginTop="96dp"
             android:text="@string/current_color"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_conversion_absoluteHeight="43dp"
