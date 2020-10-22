@@ -6,13 +6,13 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
 public class CanvasFragment extends Fragment {
-    private ConstraintLayout constraintLayout;
+    private FrameLayout frameLayout;
     TextView color_name;
 
 
@@ -23,14 +23,14 @@ public class CanvasFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View view = inflater.inflate(R.layout.canvas_fragment, container, false);
-        constraintLayout = view.findViewById(R.id.canvas_layout);
+        frameLayout = view.findViewById(R.id.canvas_layout);
         color_name = view.findViewById(R.id.color_name);
         return view;
     }
 
     public void displayColor(String color, String color_text){
 
-        constraintLayout.setBackgroundColor(Color.parseColor(color));
+        frameLayout.setBackgroundColor(Color.parseColor(color));
         color_name.setText(color_text);
 
     }
