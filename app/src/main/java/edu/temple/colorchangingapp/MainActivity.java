@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentManager;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.widget.TextView;
-
+//ahhh
 
 
 public class MainActivity extends AppCompatActivity implements PaletteFragment.OnColorSelectListener{
